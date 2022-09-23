@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+
+  <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="source/form/css/style.css" rel="stylesheet">
+	<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="source/form/css/utile.css">
+	<link rel="stylesheet" type="text/css" href="source/form/css/contact.css">
+  <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.12.1/css/jquery.dataTables.min.css">
+<!--===============================================================================================-->
+</head>
+
+<body>
+
+
+
+  <main id="main">
+
+    <!-- ======= Breadcrumbs ======= -->
+    <section id="breadcrumbs" class="breadcrumbs">
+      <div class="container">
+
+        <ol>
+          <li><a href="index.html">Home</a></li>
+          <li>Registration Fee</li>
+        </ol>
+        <h1>Registration Fee</h1>
+
+      </div>
+    </section><!-- End Breadcrumbs -->
+
+    <section class="inner-page">
+      <div class="container">
+        <table id="example" class="display" width="100%"></table>
+      </div>
+    </section>
+
+  </main><!-- End #main -->
+  <script src="form/js/contact.js"></script>
+<script type="text/javascript" charset="utf8" src="https://code.jquery.com/jquery-3.5.1.js"></script>
+<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.12.1/js/jquery.dataTables.min.js"></script>
+<script type="text/javascript">
+  var dataSet = [
+    ['Application', '3,500,000'],
+    ['Registration', '35,500,000'],
+     ['Refundable Deposit', '30,000,000'],
+    ['Total Admissions Fees', '69,000,000']
+    ];
+  $(document).ready(function () {
+    $('#example').DataTable({
+        data: dataSet,
+        columns: [
+            { title: 'Fee' },
+            { title: 'Per Individual' }
+        ],
+    });
+});
+</script>
+  <!-- Template Main JS File -->
+  <script src="source/form/js/main.js"></script>
+
+</body>
+
+</html>
